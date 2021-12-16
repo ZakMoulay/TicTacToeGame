@@ -229,17 +229,4 @@ import java.util.Random;;
                 return "";
             }
         }
-        winning.add(cross2);
-
-        for (List l : winning) {
-            if (playerPositions.containsAll(l)) {
-                return "Congradulations you just WON! ";
-            } else if (cpuPositions.containsAll(l)) {
-                return "Sorry CPU wins ";
-            } else if  (playerPositions.size() + cpuPositions.size() == 9) {
-                return "Cat !";
-            }
-        }
-            return "";
-    }
-}
+        
